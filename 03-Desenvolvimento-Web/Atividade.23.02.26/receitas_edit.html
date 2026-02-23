@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>💵 Editar Receitas</title>
+</head>
+<body>
+    <header align="center">
+        <h1>💵 Editar Receitas</h1>
+        <nav>
+            <a href="receitas.html">Voltar às Receitas</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div align="center">
+            <h2>Formulário de Edição de Receitas</h2>
+            <form>
+                <div>
+                    <label><b>ID:</b></label>
+                    <input type="text" value="1" disabled>
+                </div>
+                
+                <div>
+                    <label><b>Apartamento</b></label>
+                    <input type="number" value="101" required>
+                </div>
+                
+                <div>
+                    <label><b>Descrição:</b></label>
+                    <input type="text" value="Contribuição mensal" required>
+                </div>
+                
+                <div>
+                    <label><b>Valor Total (R$):</b></label>
+                    <input type="number" value="500.00" step="0.01" required>
+                </div>
+                
+                <div>
+                    <label><b>Vencimento:</b></label>
+                    <input type="date" value="2026-02-26" required>
+                </div>
+                
+                <div>
+                    <label><b>Pago:</b></label>
+                    <select required>
+                        <option value="nao">Não</option>
+                        <option value="sim" selected>Sim</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Salvar</button>
+                    <button type="button" onclick="window.location.href='receitas.html'">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <hr>
+    <footer align="center">
+        <small>Sistema de Gestão do Condomínio</small>
+    </footer>
+</body>
+</html>
